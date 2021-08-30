@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@font-face {
+    font-family: 'marvel';
+    src: url('/font/MarvelRegular-Dj83.ttf') format('truetype'); 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+body {
+}
+h1 {
+
+}
+header {
+    background-color: #EC1D24;
+    padding: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.219);
+}
+header .header-container{
+    max-width: 1100px;
+    margin: auto;
+}
+header .header-container .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header-container .nav-container i {
+    font-size: 2em;
+    display: none;
+}
+header .header-container .logo {
+    width: 200px;
+    height: 80px;
+}
+header .header-container .logo img {
+    width: 100%;
+    height: 100%;
+}
+header .header-container nav {
+    
+}
+header .header-container nav a {
+    font-family: 'marvel';
+    margin-right: 20px;
+    font-size: 3.5em;
+    color: black;
+    text-decoration: none;
+}
+
+
+main {
+
+}
+main .main-container {
+    max-width: 1100px;
+    margin: auto;
+}
+main .main-container .nav-herois{
+    margin: 15px 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+main .main-container .nav-herois h1 {   
+}
+h1 span {
+    font-family: 'marvel';
+    font-size: 1.3em;
+    color: #EC1D24;
+}
+main .main-container .nav-herois .busca-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #35363a;
+    padding: 10px;
+    border-radius: 50px;
+}
+main .main-container .nav-herois .busca-container input {
+    background: none;
+    border: none;
+    outline: none;
+    height: 40px;
+    color: white;
+    width: 200px;
+    font-size: 1.2em;
+}
+main .main-container .nav-herois .busca-container input::placeholder{
+    color: white;
+    text-indent: 2px;
+    font-size: 1.1em;
+}
+/*main .main-container .nav-herois .busca-container input::-webkit-search-cancel-button{
+    display: none;
+}*/
+main .main-container .nav-herois .busca-container i {
+    color: white;
+    cursor: pointer;
+    background-color: #EC1D24;
+    padding: 10px;
+    border-radius: 50%;
+}
+main .main-container #herois {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+main .main-container #herois section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    background-color: #35363a;
+    width: 230px;
+    margin: 10px 10px;
+    border-radius: 1.5rem;
+    padding: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.219);
+}
+main .main-container #herois section picture {
+    width: 210px;
+    height: 210px;
+    
+}
+main .main-container #herois section img {
+    border-radius: 50%;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    
+}
+main .main-container #herois section img:hover {
+    border-radius: 1.5rem 1.5rem 0 0;
+    
+    
+}
+main .main-container #herois section h2 {
+    color: white;
+    font-size: 1.2em;
+    padding-top: 5px;
+}
+main .main-container #herois section p {
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 0;
+    letter-spacing: 1px;
+}
+main #filmes {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+main #filmes h1 {
+    color: #35363a;
+    margin: 20px 0 10px 0;
+}
+main #filmes .filmes {
+ 
+}
+main #filmes .filmes ol {
+    display: inline-block;
+    column-count: 2;
+    list-style-position: inside;
+}
+main #filmes .filmes ol li{
+    margin-right: 100px;
+    font-size: 1.4em;
+}
+main #site {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+main #site h1 {
+    margin: 10px 0;
+    color: #35363a;
+}
+main #site .site {
+
+}
+main #site .site p {
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+aside {
+    background-color: #EC1D24;
+    
+}
+aside ul {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+aside ul li {
+    display: inline-block;
+    
+}
+aside ul li a {
+    
+}
+aside ul li a img {
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    transition: .3s;
+}
+aside ul li a img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 750px) {
+
+main .main-container #herois section {
+    width: 200px;
+    margin: 10px 10px;
+    padding: 10px;
+    
+}
+main .main-container #herois section picture {
+    width: 180px;
+    height: 180px;      
+}
+
+
+}
+
+@media (max-width: 720px) {
+
+header .header-container nav a {
+    font-size: 3em;
+}
+main .main-container .nav-herois .busca-container input {
+    width: 150px;
+    height: 20px;
+    font-size: 0.9em;
+}
+main .main-container .nav-herois h1 {  
+    font-size: 1.6em; 
+}
+h1 span {
+    font-size: 1.2em;
+}
+main .main-container #herois section {
+    width: 200px;
+}
+main .main-container #herois section picture {
+    width: 180px;
+    height: 180px;
+}
+main .main-container #herois section h2 {
+    font-size: 1.2em;
+}
+main .main-container #herois section p {
+    font-size: 1.2em;
+}
+
+main #filmes .filmes ol {
+    column-count: 1;
+}
+}
+@media (max-width: 660px) {
+
+main .main-container #herois section {
+    width: 250px;
+    margin: 10px 10px;
+    padding: 10px;
+    
+}
+main .main-container #herois section picture {
+    width: 230px;
+    height: 230px;      
+}
+}
+@media (max-width: 540px) {
+
+header .header-container .logo {
+    width: 150px;
+    height: 60px;
+}
+header .header-container .logo img {
+    width: 100%;
+    height: 100%;
+}
+header .header-container nav a {
+    display: none;
+}
+header .header-container .nav-container i {
+    font-size: 2em;
+    display: inline-block;
+}
+main .main-container .nav-herois .busca-container input {
+    display: none;
+}
+main .main-container #herois section {
+    width: 365px;     
+}
+main .main-container #herois section picture {
+    width: 345px;
+    height: 345px;      
+}
+main #filmes h1 {
+    font-size: 1.6em;
+}
+main #filmes .filmes ol li{
+    font-size: 1.1em;
+}
+main #site h1 {
+    font-size: 1.6em;
+}
+aside ul li a img {
+    width: 35px;
+    height: 35px;
+
+}
+}
+
+@media (max-width: 370px){
+
+main .main-container #herois section {
+    width: 300px;
+    margin: 10px 10px;
+    padding: 10px;        
+}
+main .main-container #herois section picture {
+    width: 280px;
+    height: 280px;      
+}
+}
