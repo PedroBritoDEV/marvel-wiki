@@ -12,10 +12,12 @@
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
 }
 h1 {
-
 }
 header {
     background-color: #EC1D24;
