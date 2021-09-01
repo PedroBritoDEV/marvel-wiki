@@ -304,6 +304,7 @@ header .header-container .logo img {
     height: 35vh;
     visibility: visible;
     overflow-y: auto;
+    font-size: 1em;
 }
 header .header-container nav  {
     /*display: none;*/
@@ -321,6 +322,7 @@ header .header-container nav  {
 }
 header .header-container .nav-container nav a p {
     padding: 1rem 1rem;
+    
     border-bottom: 2px solid #ff5858;
 }
 header .header-container .nav-container i {
@@ -355,6 +357,11 @@ aside ul li a img {
 
 @media (max-width: 370px){
 
+#nav-list.bnt-active {
+    text-align: center;
+    height: 40vh;
+    font-size: 0.7em;
+}
 main .main-container #herois section {
     width: 300px;
     margin: 10px 10px;
