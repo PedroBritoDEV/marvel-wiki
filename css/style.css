@@ -301,10 +301,10 @@ header .header-container .logo img {
 }
 #nav-list.bnt-active {
     text-align: center;
-    height: 35vh;
+    height: 240px;
     visibility: visible;
     overflow-y: auto;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 header .header-container nav  {
     /*display: none;*/
@@ -359,7 +359,7 @@ aside ul li a img {
 
 #nav-list.bnt-active {
     text-align: center;
-    height: 40vh;
+    height: 220px;
     font-size: 0.7em;
 }
 main .main-container #herois section {
