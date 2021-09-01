@@ -15,3 +15,10 @@ function out() {
 
 //botao-mobile
 
+const botao_mobile = document.getElementsByTagName('i')[0]
+botao_mobile.addEventListener("click", dropdown)
+
+function dropdown() {
+    const nav = document.getElementById('nav-list')
+    nav.classList.toggle('bnt-active')
+}
