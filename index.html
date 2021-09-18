@@ -8,6 +8,7 @@
 
     <script src="https://kit.fontawesome.com/5bc76ce712.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsividade.css">
 </head>
 <body>
     <header>
@@ -28,7 +29,7 @@
                     </a>
 
                 </nav>
-                <i class="fas fa-bars"></i>
+                <i id="btn-barra" class="fas fa-bars"></i>
             </div>
         </div>
     </header>
@@ -37,13 +38,13 @@
             <div class="nav-herois">
                 <h1>HEROIS DO UNIVERSO DA <span>MARVEL</span></h1>
                 <form class="busca-container">
-                    <input type="text" name="" id="busca" placeholder="Buscar Herois" autocomplete="off">
-                    <i class="fas fa-search"></i>
+                    <input type="text" id="barra-busca" placeholder="Buscar Herois" autocomplete="off" onkeyup="buscando()" >
+                    <i id="btn-pesquisa" class="fas fa-search"></i>
                 </form>
             </div>
             <div id="herois">
-                
-                <section id="homem-de-ferro">
+                <h3 class="msgm-erro">Nenhum Heroi encontrado, tente de novo!</h3>
+                <section class="herois-sections" id="homem-de-ferro">
                     <picture>
                         <img src="img/iron-man.jpg" alt="foto do homem de ferro">
                     </picture>
@@ -51,7 +52,7 @@
                     <p>-Tonny Stark</p>
                 </section>
 
-                <section id="capitao-america">
+                <section class="herois-sections" id="capitao-america">
                     <picture>
                         <img src="img/capitao-america.jpg" alt="foto do capitao-america">
                     </picture>
@@ -59,14 +60,14 @@
                     <p>-Steve Rogers</p>   
                 </section>
 
-                <section id="doutor-estranho">
+                <section class="herois-sections" id="doutor-estranho">
                     <picture>
                         <img src="img/doutor-estanho.jpg" alt="foto do doutor estranho">
                     </picture>
                     <h2>DOUTOR ESTRANHO</h2>
                     <p>-Stephen Vincent Strange</p>
                 </section>
-                <section id="feiticeira-scarlate">
+                <section class="herois-sections" id="feiticeira-scarlate">
                     <picture>
                         <img src="img/feiticeira-scarlat.jpg" alt="foto da feiticeira-scarlate">
                     </picture>
@@ -74,7 +75,7 @@
                     <P>-Wanda Maximoff</P>
                 </section>
 
-                <section id="viuva-negra">
+                <section class="herois-sections" id="viuva-negra">
                     <picture>
                         <img src="img/viuva-negra.jpg" alt="">
                     </picture>
@@ -82,7 +83,7 @@
                     <p>-Natasha Romanoff</p>
                 </section>
 
-                <section id="homem-aranha">
+                <section class="herois-sections" id="homem-aranha">
                     <picture>
                         <img src="img/homem-aranha.jpg" alt="">
                     </picture>
@@ -90,23 +91,23 @@
                     <p>-Peter Parker</p>
                 </section>
                 
-                <section id="thor">
+                <section class="herois-sections" id="thor">
                     <picture>
                         <img src="img/thor.jpg" alt="foto do thor">
                     </picture>
                     <h2>DEUS DO TROVÃO</h2>
-                    <p>-Thor</p>
+                    <p>-Thor Odinson</p>
                 </section>
 
-                <section>
-                    <picture id="patera-negra">
+                <section class="herois-sections" id="patera-negra">
+                    <picture>
                         <img src="img/pantera-negra.jpg" alt="foto do pantera negra">
                     </picture>
                     <h2>PANTERA NEGRA</h2>
                     <p>-T'Challa</p>
                 </section>             
 
-                <section id="hulk">
+                <section class="herois-sections" id="hulk">
                     <picture>
                         <img src="img/hulk.jpg" alt="foto do hulk">
                     </picture>
@@ -114,7 +115,7 @@
                     <p>-Bruce Banner</p>
                 </section>
 
-                <section id="homem-formiga">
+                <section class="herois-sections" id="homem-formiga">
                     <picture>
                         <img src="img/homem-formiga.jpg" alt="foto do homem formiga">
                     </picture>
@@ -122,15 +123,15 @@
                     <p>-Scott Lang</p>
                 </section>
 
-                <section>
-                    <picture id="vespa">
+                <section id="vespa" class="herois-sections">
+                    <picture>
                         <img src="img/vespa.jpg" alt="foto da vespa">
                     </picture>
                     <h2>VESPA</h2>
                     <p>-Janet</p>
                 </section>
 
-                <section id="capita-marvel">
+                <section class="herois-sections" id="capita-marvel">
                     <picture>
                         <img src="img/capita-marvel.jpg" alt="foto da capita marvel">
                     </picture>
@@ -138,7 +139,7 @@
                     <p>-Carol Danvers</p>
                 </section>
 
-                <section  id="gaviao-arqueiro">
+                <section  class="herois-sections" id="gaviao-arqueiro">
                     <picture>
                         <img src="img/gaviao-arqueiro.jpg" alt="foto do gaviao-arqueiro">
                     </picture>
@@ -146,14 +147,14 @@
                     <p>-Clint Barton</p>
                 </section>
 
-                <section id="visao">
+                <section class="herois-sections" id="visao">
                     <picture>
                         <img src="img/visao.jpg" alt="foto do visao">
                     </picture>
                     <h2>VISÃO</h2>
                     <p>-Visão</p>
                 </section>
-                <section id="maquina-de-combate">
+                <section class="herois-sections" id="maquina-de-combate">
                     <picture>
                         <img src="img/maquina-de-combate.jpg" alt="foto da maquina de combate">
                     </picture>
@@ -161,12 +162,12 @@
                     <p>-James Rhodes</p>
                 </section>
 
-                <section id="soldado-invernal">
+                <section class="herois-sections" id="soldado-invernal">
                     <picture>
                         <img src="img/Soldado-Invernal.jpg" alt="foto soldado invernal">
                     </picture>
                     <h2>SOLDADO INVERNAL</h2>
-                    <p>-Bucky</p>
+                    <p>-James Buchanan</p>
                 </section>
             </div><!--herois-->
             <div id="filmes">
